@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,58 +7,88 @@
     <title>Mi Blog Fotográfico Scout</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+```
 <header>
-    <h1>📸 Blog </h1>
+    <nav class="nav">
+        <a href="#bienvenida">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#recuerdo">Mi recuerdo</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <h1>📸 Blog</h1>
     <p class="sub">Mis recuerdos, mis aventuras y mis fotos favoritas</p>
 </header>
 
 <main>
 
-    <section class="intro">
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida" class="intro">
         <h2>Bienvenidx</h2>
         <p>
-            Este blog es un pequeño espacio donde comparto mis fotos favoritas de
-            algunos recuerdos que vivo como Scout.
+            Este blog es un pequeño espacio donde comparto mis fotografías y recuerdos más especiales que he vivido como parte de mi vida Scout.
         </p>
+
+        <ul>
+            <li>Experiencias únicas en campamentos</li>
+            <li>Momentos que guardo con cariño</li>
+            <li>Aventuras que continúan formando parte de mí</li>
+        </ul>
     </section>
 
-    <section class="gallery">
+    <!-- Galería -->
+    <section id="galeria" class="gallery">
         <h2>Galería</h2>
 
-        <div class="grid">
-            <div class="card">
-                <img src="img/foto1.jpeg" alt="Foto de campamento">
-                <p>Campamento al amanecer</p>
-            </div>
+<div class="grid">
+    <div class="card big">
+        <img src="img/foto1.jpeg" alt="Campamento al amanecer">
+        <p>Campamento al amanecer</p>
+    </div>
 
-            <div class="card">
-                <img src="img/foto2.jpg" alt="Fogata scouts">
-                <p>La fogata que nunca olvidaré</p>
-            </div>
+    <div class="card tall">
+        <img src="img/foto2.jpg" alt="Fogata en la noche">
+        <p>La fogata que nunca olvidaré</p>
+    </div>
 
-            <div class="card">
-                <img src="img/foto3.jpg" alt="Sendero">
-                <p>Un sendero que recorrimos juntas</p>
-            </div>
+    <div class="card">
+        <img src="img/foto3.jpg" alt="Sendero en el bosque">
+        <p>Un sendero que recorrimos juntas</p>
+    </div>
 
-            <div class="card">
-                <img src="/Users/natyv/Documents/ProyectosWeb/Blog/img/foto3.jpg" alt="Amistad">
-                <p>Hermosas amistades que te encuentras en el camino</p>
-            </div>
-        </div>
+    <div class="card wide">
+        <img src="img/foto4.jpg" alt="Amistades en el camino">
+        <p>Hermosas amistades que te encuentras en el camino</p>
+    </div>
+</div>
+
     </section>
 
-    <section class="memory">
+    <!-- Recuerdo favorito -->
+    <section id="recuerdo" class="memory">
         <h2>Mi recuerdo favorito 🌿</h2>
         <p>
-            Una de las mejores experiencias que he tenido es aquel campamento lleno
-            distintas emocione. Estábamos rodeadas de árboles, el cielo lleno de
-            neblina en la mayoría de tiempo. Después de esa semana entendí lo mágio
-            que es ser Scout, experimentar diferentes emociones pero siempre
-            acompañado de tus amigos y dirigente .
+            Una de las experiencias más especiales que he vivido fue un campamento lleno de emociones. El paisaje estaba rodeado de árboles y la neblina cubría el cielo casi todo el tiempo.  
+            Esa semana comprendí lo mágico que es ser Scout: vivir aventuras, aprender, crecer y compartir momentos inolvidables con mis amigas, amigos y dirigentes.
         </p>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto" class="form">
+        <h2>Comparte tu recuerdo ✨</h2>
+
+        <form>
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="mensaje">Tu recuerdo favorito:</label>
+            <textarea id="mensaje" placeholder="Cuéntame tu mejor recuerdo scout" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
 </main>
@@ -65,6 +96,7 @@
 <footer>
     <p>Hecho por Naty ❤️‍🔥⚜️ — 2025</p>
 </footer>
+```
 
 </body>
 </html>
